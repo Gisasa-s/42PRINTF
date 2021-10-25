@@ -6,7 +6,7 @@
 #    By: gisasa-s <gisasa-s@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/10/14 13:45:02 by gisasa-s          #+#    #+#              #
-#    Updated: 2021/10/25 16:59:00 by gisasa-s         ###   ########.fr        #
+#    Updated: 2021/10/25 17:11:30 by gisasa-s         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,12 +27,12 @@ CFLAGS= -Wall -Wextra -Werror
 
 RM = rm -f
 
-OBJS = $(SRCS:.c = .o)
+OBJS = $(SRCS:.c=.o)
 
 .c.o:
 	$(CC) $(CFLAGS) -c $< -o ${<:.c=.o}
 
-all: $((NAME)
+all: $(NAME)
 $(NAME):
 	$(CC) $(CFLAGS) -c $(SRCS)
 	ar rc $(NAME) $(OBJS)

@@ -6,7 +6,7 @@
 /*   By: gisasa-s <gisasa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/04 12:51:09 by gisasa-s          #+#    #+#             */
-/*   Updated: 2021/10/25 16:53:47 by gisasa-s         ###   ########.fr       */
+/*   Updated: 2021/10/25 17:11:40 by gisasa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@
 int		ft_putstr(char *s);
 int		ft_putnbr_fd(long n, int fd);
 int		ft_printf(const char *formato, ...);
-int		t_putchar_fd(char c, int fd);
+int		ft_putchar_fd(char c, int fd);
 int		comprobantes(va_list list, char c);
 int		ft_putnbr_hex(long n);
 char	*ft_unsigned(int n);
