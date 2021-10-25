@@ -6,7 +6,7 @@
 /*   By: gisasa-s <gisasa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/04 12:51:09 by gisasa-s          #+#    #+#             */
-/*   Updated: 2021/10/25 16:18:48 by gisasa-s         ###   ########.fr       */
+/*   Updated: 2021/10/25 16:53:47 by gisasa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <stdbool.h>
-# include "libft/libft.h"
 
 int		ft_putstr(char *s);
 int		ft_putnbr_fd(long n, int fd);

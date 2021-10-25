@@ -6,7 +6,7 @@
 /*   By: gisasa-s <gisasa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/09 11:17:35 by gisasa-s          #+#    #+#             */
-/*   Updated: 2021/10/22 11:19:20 by gisasa-s         ###   ########.fr       */
+/*   Updated: 2021/10/25 16:54:01 by gisasa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int comprobantes (va_list list , char c) // ongo la i para indicarle que con mas
     if (c == 's')
                 bytes += ft_putstr(va_arg (list , char*));        
                            
-    else if (c == 'i' || c == 'd')  // imprie  numeros negativos 
+    else if (c == 'i' || c == 'd') 
                bytes += ft_putnbr_fd(va_arg(list, int),1);
     else if (c == 'c')
               bytes += ft_putchar_fd(va_arg(list , int),1);
