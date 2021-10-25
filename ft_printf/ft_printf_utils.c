@@ -6,29 +6,29 @@
 /*   By: gisasa-s <gisasa-s@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/04 19:27:06 by gisasa-s          #+#    #+#             */
-/*   Updated: 2021/10/25 17:01:48 by gisasa-s         ###   ########.fr       */
+/*   Updated: 2021/10/25 18:26:53 by gisasa-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_putstr(char *s)
+int	ft_putstr(char *s)
 {
-	size_t i;
-	
+	size_t	i;
+
 	i = 0;
 	if (s)
 	{
 		while (s[i])
 		{
 			write(1, &s[i], 1);
-				i++;
+			i++;
 		}
 	}
-		else
-		{
-		i = write(1, "(null)" ,6);
-		}
+	else
+	{
+		i = write(1, "(null)", 6);
+	}
 	return (i);
 }
 
@@ -65,4 +65,3 @@ int	ft_putnbr_fd(long n, int fd)
 	}
 	return (bytes);
 }
-
